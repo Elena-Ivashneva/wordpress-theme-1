@@ -1,0 +1,246 @@
+/* Fonts */
+
+@font-face {
+  font-weight: 300;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/montserrat/montserrat-light.woff2") format("woff2"),
+    url("../fonts/montserrat/montserrat-light.woff") format("woff"),
+    url("../fonts/montserrat/montserrat-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/montserrat/montserrat-regular.woff2") format("woff2"),
+    url("../fonts/montserrat/montserrat-regular.woff") format("woff"),
+    url("../fonts/montserrat/montserrat-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Helvetica Neue LT Pro";
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/helvetica-neue-lt-pro/helvetica-neue-lt-pro-lt.woff2") format("woff2"),
+    url("../fonts/helvetica-neue-lt-pro/helvetica-neue-lt-pro-lt.woff") format("woff"),
+    url("../fonts/helvetica-neue-lt-pro/helvetica-neue-lt-pro-lt.otf") format("opentype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Helvetica Neue LT Pro";
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/helvetica-neue-lt-pro/helvetica-neue-lt-pro-roman.woff2") format("woff2"),
+    url("../fonts/helvetica-neue-lt-pro/helvetica-neue-lt-pro-roman.woff") format("woff"),
+    url("../fonts/helvetica-neue-lt-pro/helvetica-neue-lt-pro-roman.otf") format("opentype");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: "Helvetica Neue LT Pro";
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/helvetica-neue-lt-pro/helvetica-neue-lt-pro-md.woff2") format("woff2"),
+    url("../fonts/helvetica-neue-lt-pro/helvetica-neue-lt-pro-md.woff") format("woff"),
+    url("../fonts/helvetica-neue-lt-pro/helvetica-neue-lt-pro-md.otf") format("opentype");
+}
+
+@font-face {
+  font-weight: 300;
+  font-family: "Merriweather";
+  font-style: italic;
+  font-display: swap;
+  src:
+    url("../fonts/merriweather/merriweather-light-italic.woff2") format("woff2"),
+    url("../fonts/merriweather/merriweather-light-italic.woff") format("woff"),
+    url("../fonts/merriweather/merriweather-light-italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-weight: 400;
+  font-family: "Roboto";
+  font-style: normal;
+  font-display: swap;
+  src:
+    url("../fonts/roboto/roboto-regular.woff2") format("woff2"),
+    url("../fonts/roboto/roboto-regular.woff") format("woff"),
+    url("../fonts/roboto/roboto-regular.ttf") format("truetype");
+}
+
+/* Global */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+/* Header */
+
+.header__wrapper {
+  position: relative;
+  display: grid;
+  padding-top: 14px;
+  padding-bottom: 13px;
+}
+
+.header__logo {
+  position: absolute;
+  top: 0;
+  justify-self: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo:hover,
+.logo:focus,
+.logo:active {
+  opacity: 0.8;
+}
+
+.menu {
+  display: grid;
+  gap: 162px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.menu__list {
+  display: flex;
+  gap: 33px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 13px;
+  line-height: 17px;
+  font-family: "Roboto", sans-serif;
+  color: #989696;
+  text-transform: capitalize;
+  letter-spacing: 0.04em;
+}
+
+.menu__list--before-logo {
+  justify-self: end;
+}
+
+.menu__list--after-logo {
+  justify-self: start;
+}
+
+.menu__link {
+  display: block;
+  padding: 5px;
+}
+
+.menu__link--active {
+  color: #010101;
+}
+
+.menu__link:hover,
+.menu__link:focus,
+.menu__link:active {
+  color: #010101;
+}
+
+/* Content */
+
+.main-title {
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 41px;
+  font-family: "Helvetica Neue LT Pro", sans-serif;
+  color: #1d1e1f;
+  letter-spacing: 0.02em;
+}
+
+.main-subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 17px;
+  font-family: "Merriweather", serif;
+  color: #898888;
+  font-style: italic;
+  letter-spacing: 0.03em;
+}
+
+
+.button {
+  padding: 20px 19px 18px 20px;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 1px solid #000000;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  color: #fefefe;
+  background-color: #161616;
+  border-color: #161616;
+}
+
+/* Intro */
+
+.intro__wrapper {
+  display: grid;
+  justify-items: center;
+  padding-top: 202px;
+  padding-bottom: 206px;
+  text-align: center;
+}
+
+.intro__main-title {
+  margin: 0 0 8px;
+}
+
+.intro__main-subtitle {
+  margin: 0 0 44px;
+}
+
+.intro__button {
+  min-width: 188px;
+}
