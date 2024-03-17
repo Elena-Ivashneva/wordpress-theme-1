@@ -1,8 +1,8 @@
-/* Fonts */
+/* ===== Fonts ===== */
 
 @font-face {
-  font-weight: 300;
   font-family: "Montserrat";
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
   src:
@@ -12,8 +12,8 @@
 }
 
 @font-face {
-  font-weight: 400;
   font-family: "Montserrat";
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
   src:
@@ -23,8 +23,8 @@
 }
 
 @font-face {
-  font-weight: 300;
   font-family: "Helvetica Neue LT Pro";
+  font-weight: 300;
   font-style: normal;
   font-display: swap;
   src:
@@ -34,8 +34,8 @@
 }
 
 @font-face {
-  font-weight: 400;
   font-family: "Helvetica Neue LT Pro";
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
   src:
@@ -45,8 +45,8 @@
 }
 
 @font-face {
-  font-weight: 500;
   font-family: "Helvetica Neue LT Pro";
+  font-weight: 500;
   font-style: normal;
   font-display: swap;
   src:
@@ -56,8 +56,8 @@
 }
 
 @font-face {
-  font-weight: 300;
   font-family: "Merriweather";
+  font-weight: 300;
   font-style: italic;
   font-display: swap;
   src:
@@ -67,8 +67,8 @@
 }
 
 @font-face {
-  font-weight: 400;
   font-family: "Roboto";
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
   src:
@@ -77,20 +77,21 @@
     url("../fonts/roboto/roboto-regular.ttf") format("truetype");
 }
 
-/* Global */
+/* ===== Global ===== */
 
 html {
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
 }
 
 *,
 *::before,
 *::after {
   box-sizing: inherit;
+}
+
+body {
+  min-width: 1200px;
+  margin: 0;
 }
 
 img {
@@ -125,7 +126,7 @@ a {
   padding-left: 15px;
 }
 
-/* Header */
+/* ===== Header ===== */
 
 .header__wrapper {
   position: relative;
@@ -145,18 +146,21 @@ a {
 }
 
 .logo:hover,
-.logo:focus,
-.logo:active {
+.logo:focus {
   opacity: 0.8;
 }
 
-.menu {
+.logo:active {
+  opacity: 0.7;
+}
+
+.main-menu {
   display: grid;
   gap: 162px;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.menu__list {
+.main-menu__list {
   display: flex;
   gap: 33px;
   margin: 0;
@@ -170,56 +174,61 @@ a {
   letter-spacing: 0.04em;
 }
 
-.menu__list--before-logo {
+.main-menu__list--before-logo {
   justify-self: end;
 }
 
-.menu__list--after-logo {
+.main-menu__list--after-logo {
   justify-self: start;
 }
 
-.menu__link {
+.main-menu__link {
   display: block;
   padding: 5px;
 }
 
-.menu__link--active {
+.main-menu__link--active {
   color: #010101;
 }
 
-.menu__link:hover,
-.menu__link:focus,
-.menu__link:active {
+.main-menu__link:hover,
+.main-menu__link:focus {
   color: #010101;
 }
 
-/* Content */
+.main-menu__link:active {
+  opacity: 0.8;
+}
+
+/* ===== Content ===== */
+
+/* === Common === */
 
 .main-title {
   font-weight: 300;
   font-size: 44px;
-  line-height: 41px;
+  line-height: 1;
   font-family: "Helvetica Neue LT Pro", sans-serif;
   color: #1d1e1f;
   letter-spacing: 0.02em;
 }
 
 .main-subtitle {
+  font-style: italic;
   font-weight: 300;
   font-size: 16px;
-  line-height: 17px;
+  line-height: 1;
   font-family: "Merriweather", serif;
   color: #898888;
-  font-style: italic;
   letter-spacing: 0.03em;
 }
 
 
 .button {
-  padding: 20px 19px 18px 20px;
-  font-weight: 700;
+  padding: 22px 20px 20px;
+  font-weight: 400;
   font-size: 13px;
-  line-height: 17px;
+  line-height: 1;
   font-family: "Montserrat", sans-serif;
   text-align: center;
   color: #000000;
@@ -229,36 +238,39 @@ a {
 }
 
 .button:hover,
-.button:focus,
-.button:active {
+.button:focus {
   color: #fefefe;
   background-color: #161616;
   border-color: #161616;
 }
 
-/* Intro */
+.button:active {
+  opacity: 0.8;
+}
+
+/* === Intro === */
 
 .intro__wrapper {
   display: grid;
   justify-items: center;
-  padding-top: 202px;
+  padding-top: 200px;
   padding-bottom: 206px;
   text-align: center;
 }
 
-.intro__main-title {
-  margin: 0 0 8px;
+.intro__title {
+  margin: 0 0 7px;
 }
 
-.intro__main-subtitle {
-  margin: 0 0 44px;
+.intro__subtitle {
+  margin: 0 0 45px;
 }
 
 .intro__button {
   min-width: 188px;
 }
 
-/* About */
+/* === About === */
 
 .about {
   position: relative;
@@ -304,15 +316,16 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-width: 417px;
+  align-items: center;
+  width: 417px;
   min-height: 276px;
-  padding: 38px 10px 40px 14px;
+  padding: 38px 11px 40px 13px;
   background-color: #181818;
 }
 
 .about__item--wide {
-  padding-right: 8px;
-  padding-left: 12px;
+  padding-right: 9px;
+  padding-left: 11px;
 }
 
 .about__title {
