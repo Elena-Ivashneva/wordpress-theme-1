@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Fontello';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../font/fontello.eot?92793936');
+  src: url('../font/fontello.eot?92793936#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?92793936') format('woff2'),
+       url('../font/fontello.woff?92793936') format('woff'),
+       url('../font/fontello.ttf?92793936') format('truetype'),
+       url('../font/fontello.svg?92793936#fontello') format('svg');
+}
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'Fontello';
+    src: url('../font/fontello.svg?92793936#fontello') format('svg');
+  }
+}
+*/
+
+.icon-twitter::before {
+  content: '\f099';
+}
+
+.icon-instagram::before {
+  content: '\f16d';
+}
+
+[class^="icon-"]::before,
+[class*="icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: .2em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  font-style: normal;
+  font-weight: 400;
+  /* you can be more comfortable with increased icons size */
+  font-size: 120%;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  font-family: 'Fontello';
+
+  text-align: center;
+  text-decoration: inherit;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  text-transform: none;
+  font-variant: normal;
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+
+  opacity: .8;
+}
