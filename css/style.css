@@ -220,6 +220,7 @@ a {
   font-size: 44px;
   line-height: 26px;
   font-family: "Helvetica Neue LT Pro", sans-serif;
+  text-align: center;
   color: #1d1e1f;
   letter-spacing: 0.02em;
 }
@@ -228,18 +229,27 @@ a {
   font-size: 34px;
 }
 
+.title--light {
+  color: #ffffff;
+}
+
 .subtitle {
   font-style: italic;
   font-weight: 300;
   font-size: 16px;
   line-height: 26px;
   font-family: "Merriweather", serif;
+  text-align: center;
   color: #898888;
   letter-spacing: 0.03em;
 }
 
 .subtitle--spacing-smaller {
   letter-spacing: 0.02em;
+}
+
+.subtitle--darker {
+  color: #777777;
 }
 
 .button {
@@ -273,7 +283,6 @@ a {
   justify-items: center;
   padding-top: 209px;
   padding-bottom: 206px;
-  text-align: center;
 }
 
 .intro__title {
@@ -323,8 +332,9 @@ a {
 
 .about__list {
   display: grid;
+  justify-content: center;
   gap: 178px;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, 417px);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -335,7 +345,6 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 417px;
   min-height: 276px;
   padding: 38px 11px 40px 13px;
   background-color: #181818;
@@ -376,7 +385,6 @@ a {
 
 .team__header {
   margin: 0 100px 106px;
-  text-align: center;
 }
 
 .team__title {
@@ -390,7 +398,7 @@ a {
 .team__list {
   display: grid;
   justify-content: center;
-  gap: 35px 66px;
+  gap: 37px 66px;
   grid-template-columns: repeat(auto-fit, 335px);
   margin: 0 17px 0 16px;
   padding: 0;
@@ -412,7 +420,7 @@ a {
   align-items: center;
   width: 170px;
   height: 170px;
-  margin-bottom: 22px;
+  margin-bottom: 21px;
 }
 
 .person-card__content {
@@ -423,13 +431,13 @@ a {
   margin: 0;
   font-weight: 400;
   font-size: 24px;
-  line-height: 1;
+  line-height: 26px;
   color: #464646;
   letter-spacing: 0.02em;
 }
 
 .person-card__text {
-  margin: 4px 0 0;
+  margin: 3px 0 0;
   font-size: 13px;
   line-height: 1;
   color: #b3b3b3;
@@ -461,8 +469,96 @@ a {
   filter: brightness(0.7);
 }
 
+/* === Services === */
 
-.test {
-  height: 100px;
+.services {
   background-color: #181818;
+}
+
+.services__wrapper {
+  padding: 175px 0 139px;
+}
+
+.services__header {
+  margin: 0 100px 120px;
+}
+
+.services__title {
+  margin: 0 0 7px;
+}
+
+.services__subtitle {
+  margin: 0 0 0 5px;
+}
+
+.services__list {
+  display: grid;
+  justify-content: center;
+  gap: 51px 49px;
+  grid-template-columns: repeat(auto-fit, 367px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  font-family: "Helvetica Neue LT Pro", sans-serif;
+  text-align: center;
+}
+
+.service-card__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 172px;
+  height: 172px;
+  margin-bottom: 40px;
+  border: 6px solid #ffffff;
+  border-radius: 50%;
+}
+
+.service-card__icon::before {
+  content: "";
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.service-card__icon--graph::before {
+  width: 64px;
+  height: 54px;
+  background-image: url("../img/service-graph.png");
+}
+
+.service-card__icon--heart::before {
+  width: 73px;
+  height: 63px;
+  background-image: url("../img/service-heart.png");
+}
+
+.service-card__icon--cloud::before {
+  width: 64px;
+  height: 55px;
+  background-image: url("../img/service-cloud.png");
+}
+
+.service-card__name {
+  margin: 0 0 28px;
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 26px;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+}
+
+.service-card__text {
+  margin: 0;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 23px;
+  color: #383838;
+  letter-spacing: 0.02em;
 }
