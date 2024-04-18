@@ -7,12 +7,13 @@
     <title>Wordpress Landing Page</title>
     <meta name="description" content="Курс Исмаила Усеинова «Сайт на Wordpress. Верстка сайта и перенос на CMS».">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logo.png" type="image/png" sizes="32x32">
   </head>
 
   <body class="page">
     <header class="header">
       <div class="header__wrapper container">
-        <a class="header__logo logo" href="./index.html" aria-current="page" aria-label="Home">
+        <a class="header__logo logo" href="./index.html" aria-current="page" aria-label="to Home Page">
           <img src="./img/logo.png" width="55" height="54" alt="Logo">
         </a>
         <nav class="main-menu">
@@ -105,12 +106,12 @@
               <ul class="person-card__socials">
                 <li class="person-card__socials-item">
                   <a class="person-card__socials-link" href="#nowhere" target="_blank" aria-label="Mark Once on Twitter">
-                    <img src="./img/icon-twitter.png" width="21px" height="18px" alt="">
+                    <img src="./img/icon-twitter.png" width="21" height="18" alt="">
                   </a>
                 </li>
                 <li class="person-card__socials-item">
                   <a class="person-card__socials-link" href="#nowhere" target="_blank" aria-label="Mark Once on Instagram">
-                    <img src="./img/icon-instagram.png" width="21px" height="20px" alt="">
+                    <img src="./img/icon-instagram.png" width="21" height="20" alt="">
                   </a>
                 </li>
               </ul>
@@ -126,12 +127,12 @@
               <ul class="person-card__socials">
                 <li class="person-card__socials-item">
                   <a class="person-card__socials-link" href="#nowhere" target="_blank" aria-label="Justin Twice on Twitter">
-                    <img src="./img/icon-twitter.png" width="21px" height="18px" alt="">
+                    <img src="./img/icon-twitter.png" width="21" height="18" alt="">
                   </a>
                 </li>
                 <li class="person-card__socials-item">
                   <a class="person-card__socials-link" href="#nowhere" target="_blank" aria-label="Justin Twice on Instagram">
-                    <img src="./img/icon-instagram.png" width="21px" height="20px" alt="">
+                    <img src="./img/icon-instagram.png" width="21" height="20" alt="">
                   </a>
                 </li>
               </ul>
@@ -147,12 +148,12 @@
               <ul class="person-card__socials">
                 <li class="person-card__socials-item">
                   <a class="person-card__socials-link" href="#nowhere" target="_blank" aria-label="Antonio Never on Twitter">
-                    <img src="./img/icon-twitter.png" width="21px" height="18px" alt="">
+                    <img src="./img/icon-twitter.png" width="21" height="18" alt="">
                   </a>
                 </li>
                 <li class="person-card__socials-item">
                   <a class="person-card__socials-link" href="#nowhere" target="_blank" aria-label="Antonio Never on Instagram">
-                    <img src="./img/icon-instagram.png" width="21px" height="20px" alt="">
+                    <img src="./img/icon-instagram.png" width="21" height="20" alt="">
                   </a>
                 </li>
               </ul>
@@ -164,30 +165,30 @@
       <section class="services">
         <div class="services__wrapper container">
           <div class="services__header">
-            <h2 class="services__title title title--size-smaller title--light">
+            <h2 class="services__title title title--size-smaller title--color-light">
               We provide you everything
             </h2>
-            <p class="services__subtitle subtitle subtitle--spacing-smaller subtitle--darker">
+            <p class="services__subtitle subtitle subtitle--spacing-smaller subtitle--color-darker">
               Maybe not everything, but we provide you some stuff.
             </p>
           </div>
           <ul class="services__list">
             <li class="services__item service-card">
-              <div class="service-card__icon service-card__icon--graph"></div>
+              <div class="service-card__icon-box service-card__icon-box--graph"></div>
               <h3 class="service-card__name">Some Analytics</h3>
               <p class="service-card__text">
                 Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo
               </p>
             </li>
             <li class="services__item service-card">
-              <div class="service-card__icon service-card__icon--heart"></div>
+              <div class="service-card__icon-box service-card__icon-box--heart"></div>
               <h3 class="service-card__name">We provide you love</h3>
               <p class="service-card__text">
                 Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo
               </p>
             </li>
             <li class="services__item service-card">
-              <div class="service-card__icon service-card__icon--cloud"></div>
+              <div class="service-card__icon-box service-card__icon-box--cloud"></div>
               <h3 class="service-card__name">And Some Cloud</h3>
               <p class="service-card__text">
                 Aenean nisi lectus, convallis non lorem sit amet, rhoncus malesuada justo
@@ -196,7 +197,59 @@
           </ul>
         </div>
       </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper container">
+          <div class="contacts__header">
+            <h2 class="contacts__title title title--size-smaller">Contact Us</h2>
+            <p class="contacts__subtitle subtitle subtitle--spacing-smaller">
+              We know what we need to do
+            </p>
+          </div>
+          <address class="contacts__contact-info contact-info">
+            <a class="contact-info__link contact-info__link--phone" href="tel:555222333">
+              555-222-333
+            </a>
+            <a class="contact-info__link contact-info__link--location" href="https://maps.app.goo.gl/a2MX5aErm8BmRSqm8" target="_blank">
+              Here is some address
+            </a>
+            <a class="contact-info__link contact-info__link--mail" href="mailto:somemail@hotmail.com">
+              somemail@hotmail.com
+            </a>
+          </address>
+
+          <form class="contacts__feedback-form form" action="https://echo.htmlacademy.ru/" method="post" autocomplete="off">
+            <label class="form__field field">
+              <span class="visually-hidden">Full Name:</span>
+              <input class="field__input" type="text" name="name" placeholder="Full Name" required>
+            </label>
+            <label class="form__field field">
+              <span class="visually-hidden">Email:</span>
+              <input class="field__input" type="email" name="email" placeholder="Email" required>
+            </label>
+            <label class="form__field field">
+              <span class="visually-hidden">Number:</span>
+              <input class="field__input" type="tel" name="number" placeholder="Number">
+            </label>
+            <label class="form__field form__field--textarea field">
+              <span class="visually-hidden">Message:</span>
+              <textarea class="field__input field__input--textarea" name="message" placeholder="Write your Message here..."></textarea>
+            </label>
+            <button class="form__submit button button--font-alter button--inverse" type="submit">
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper container">
+        <p class="footer__copyright">
+          Copyright &copy; Kenan Hamidic. All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 
 </html>
